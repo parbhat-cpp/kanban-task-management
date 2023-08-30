@@ -41,7 +41,7 @@ function Task({ status, count, title, desc }) {
   };
 
   const onDoneClicked = async (id) => {
-    await fetch(`http://localhost:5000/update-to-done/${id}`)
+    await fetch(`https://kanban-task-server.onrender.com/update-to-done/${id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -51,7 +51,7 @@ function Task({ status, count, title, desc }) {
   };
 
   const onDoingClicked = async (id) => {
-    await fetch(`http://localhost:5000/update-to-doing/${id}`)
+    await fetch(`https://kanban-task-server.onrender.com/update-to-doing/${id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -66,7 +66,7 @@ function Task({ status, count, title, desc }) {
 
   const onUpdateSubmit = async (id) => {
     await axios.post(
-      `http://localhost:5000/update-title-desc/${id}`,
+      `https://kanban-task-server.onrender.com/update-title-desc/${id}`,
       {
         title: t,
         desc: d,
@@ -89,7 +89,7 @@ function Task({ status, count, title, desc }) {
   };
 
   const onDeleteClicked = async (id) => {
-    await fetch(`http://localhost:5000/delete/${id}`)
+    await fetch(`https://kanban-task-server.onrender.com/delete/${id}`)
       .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((err) => console.log(err));

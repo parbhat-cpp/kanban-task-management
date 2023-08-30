@@ -67,7 +67,7 @@ function Body() {
 
   useEffect(() => {
     try {
-      fetch(`http://localhost:5000/get-data`)
+      fetch(`https://kanban-task-server.onrender.com/get-data`)
         .then((res) => res.json())
         .then((data) => {
           if (data === null) {
@@ -85,7 +85,7 @@ function Body() {
   useEffect(() => {
     if (done === true) {
       (async () => {
-        await axios.post("http://localhost:5000/upload-data", dataList, {
+        await axios.post("https://kanban-task-server.onrender.com/upload-data", dataList, {
           headers: { "Content-Type": "application/json" },
         });
       })();
