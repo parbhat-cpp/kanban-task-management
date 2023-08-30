@@ -13,6 +13,11 @@ In this project I have used MERN stack to build this task management website.
 
 <h3>Mobile View</h3>
 <img src="https://github.com/parbhat-cpp/kanban-task-management/assets/83265789/132378fa-9a28-4990-b39c-8644b3ce21b7" alt="mobile view"/>
+In mobile view the three section get arranged vertically. Which is a convinient way to use in mobile devices.
+
+<h3>Hosting</h3>
+For hosting I have used "Render", it is a website where we can host our MERN project for free. And, as it is free sometimes it may take time to show data from database.
+For both client and server deployment I have used this site because I am using this site to host all my MERN projects.
 
 
 
